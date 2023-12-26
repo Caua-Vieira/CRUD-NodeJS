@@ -22,24 +22,3 @@ xhr.onload = function () {
 }
 
 xhr.send("livro=TesteLivro&ano=2023")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*const objeto = {
-    nome: "teste123",
-    sobrenome: "123",
-    idade: "2"
-}*/
-
-
