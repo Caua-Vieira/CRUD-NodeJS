@@ -1,0 +1,34 @@
+//1- UMA FUNCTION PODE FUNCIONAR DESSA FORMA TAMBÉM
+//router.patch('/', (req, res) => {  
+//    res.send("Requisição do tipo patch")
+//})
+
+//router só tem a função de direcionar, reagir a cada tipo de ação HTTP
+//Parte lógica não é responsabilidade dele
+
+//Arquivo JSON 
+//Arquivo de texto em formato de objeto JavaScript
+
+//FS: ferramenta para manipular arquivos JavaScript
+
+//...dadosAtuais = significa que estamos colocando nessa nova lista tudo que tem nos dados atuais
+
+// Aprendendo a acessar arquivos com NODE:
+//const fs = require("fs")
+//const dadosAtuais = JSON.parse(fs.readFileSync("livros.json"))
+//const novoDado = { id: 3, nome: 'Livro mais que demais' }
+
+//fs.writeFileSync("livros.json", JSON.stringify([...dadosAtuais, novoDado]))
+
+//console.log(JSON.parse(fs.readFileSync("livros.json")))
+
+//Os controladors também não tem a obrigação de fazer conexões com ferramentas e serviços externos, 
+//como por exemplo banco de dados, quem faz isso são os serviços
+//os serviços não se preocupam com erros, apenas em ler um json e retornar esse valor
+
+//res é nossa resposta pro usuário que nos chamou
+//req é a requisição do usuário, as coisas que o usuário nos mmandou pela API
+
+//Number transforma tudo em número
+//Se receber Number(2) -> 2 
+//Number("batata") -> Nan (Not a Number)
